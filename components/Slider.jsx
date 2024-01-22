@@ -19,7 +19,7 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id="gallery" className="max-w-[1240px] mx-auto h-[400px]">
+    <div id="gallery" className="max-w-[1240px]  h-[300px] mx-auto ">
       <div className="relative flex justify-center align-center p-4">
         {SliderData.map((slide, index) => {
           return (
@@ -33,7 +33,7 @@ const Slider = ({ slides }) => {
             >
               <FaArrowCircleLeft
                 onClick={prevSlide}
-                className="bg-black opacity-7 absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                className="bg-black opacity-7 absolute top-[40%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
               {index === current && (
@@ -41,13 +41,13 @@ const Slider = ({ slides }) => {
                   src={slide.image}
                   alt="/"
                   width={slide.portrait ? "400" : "1440"}
-                  height="600"
+                  height="800"
                   objectFit="cover"
                 />
               )}
               <FaArrowCircleRight
                 onClick={nextSlide}
-                className="bg-black opacity-6 absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                className="bg-black opacity-6 absolute top-[40%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
             </div>
