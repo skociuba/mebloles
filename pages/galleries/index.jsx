@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Hero from "../../components/Hero"
 import Navbar from "../../components/Navbar"
-import { galleriesData } from "./SliderData"
+import { galleriesData } from "./../../components/SliderData"
 const Galleries = () => {
   return (
     <>

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import Link from "next/link"
 import Slider from "./Slider"
-import { SliderData } from "./SliderData"
+import { SliderData } from "./../../components/SliderData"
 
 const Comment = () => {
   const router = useRouter()

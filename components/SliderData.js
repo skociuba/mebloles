@@ -1,32 +1,30 @@
-import Galleries from "."
-import meble1 from "../../public/meble1.jpg"
-import meble2 from "../../public/meble2.jpg"
-import meble3 from "../../public/meble3.jpg"
-import meble4 from "../../public/meble4.jpg"
-import meble5 from "../../public/meble5.jpg"
-import salon1 from "../../public/salon1.jpg"
-import salon2 from "../../public/salon2.jpg"
-import salon3 from "../../public/salon3.jpg"
-import salon4 from "../../public/salon4.jpg"
-import sypialnia1 from "../../public/sypialnia1.jpg"
-import sypialnia2 from "../../public/sypialnia2.jpg"
-import sypialnia3 from "../../public/sypialnia3.jpg"
-import sypialnia4 from "../../public/sypialnia4.jpg"
+import meble1 from "../public/meble1.jpg"
+import meble2 from "../public/meble2.jpg"
+import meble3 from "../public/meble3.jpg"
+import meble4 from "../public/meble4.jpg"
+import meble5 from "../public/meble5.jpg"
+import salon1 from "../public/salon1.jpg"
+import salon2 from "../public/salon2.jpg"
+import salon3 from "../public/salon3.jpg"
+import salon4 from "../public/salon4.jpg"
+import sypialnia1 from "../public/sypialnia1.jpg"
+import sypialnia2 from "../public/sypialnia2.jpg"
+import sypialnia3 from "../public/sypialnia3.jpg"
+import sypialnia4 from "../public/sypialnia4.jpg"
 
 export const galleriesData = [
   {
-    href:"/galleries/1",
+    href: "/galleries/1",
     image: meble5,
   },
   {
-    href:"/galleries/2",
+    href: "/galleries/2",
     image: salon1,
   },
   {
-    href:"/galleries/3",
+    href: "/galleries/3",
     image: sypialnia1,
   },
-  
 ]
 
 export const SliderData = {
