@@ -15,26 +15,18 @@ import sypialnia4 from "../../public/sypialnia4.jpg"
 
 export const galleriesData = [
   {
-    id: 1,
+    href:"/galleries/1",
     image: meble5,
-    alt: "meble5",
-    title: "meble",
-    description: "meble",
   },
   {
-    id: 2,
+    href:"/galleries/2",
     image: salon1,
-    alt: "salon1",
-    title: "salon",
-    description: "salon",
   },
   {
-    id: 3,
+    href:"/galleries/3",
     image: sypialnia1,
-    alt: "sypialnia1",
-    title: "sypialnia",
-    description: "sypialnia",
   },
+  
 ]
 
 export const SliderData = {
