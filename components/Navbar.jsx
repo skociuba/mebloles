@@ -31,21 +31,23 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <h1
-            style={{ color: `${textColor}` }}
-            className="font-bold text-4xl"
-          >Mebloles</h1>
+          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
+            Mebloles
+          </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4">
             <Link href="/">Home</Link>
           </li>
           <li className="p-4">
-            <Link href="/#gallery">Gallery</Link>
+            <Link href="/#about">O nas</Link>
+          </li>
+          <li className="p-4">
+            <Link href="/galleries">Galerie</Link>
           </li>
 
           <li className="p-4">
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">Kontakt</Link>
           </li>
         </ul>
 
@@ -76,13 +78,19 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/#gallery">Gallery</Link>
+              <Link href="/#about">O nas</Link>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
             >
-              <Link href="/contact">Contact</Link>
+              <Link href="/galleries">Galerie</Link>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl hover:text-gray-500"
+            >
+              <Link href="/contact">Kontakt</Link>
             </li>
           </ul>
         </div>
