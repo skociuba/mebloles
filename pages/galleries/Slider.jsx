@@ -1,10 +1,17 @@
 import Image from "next/image"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa"
 
 const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0)
   const length = slides?.length
+
+  useEffect(() => {
+    const imageElement = document.getElementById("centerImage")
+    if (imageElement) {
+      imageElement.scrollIntoView({ behavior: "smooth", block: "end" })
+    }
+  }, [])
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)
@@ -32,11 +39,12 @@ const Slider = ({ slides }) => {
             >
               <FaArrowCircleLeft
                 onClick={prevSlide}
-                className="absolute lg:top-[50%] md:top-[50%] top-[100%] left-[30px] cursor-pointer select-none z-[2]"
+                className="absolute top-[45%] left-[30px] cursor-pointer select-none z-[2]"
                 size={50}
               />
               {index === current && (
                 <Image
+                  id="centerImage"
                   src={slide.image}
                   alt="/"
                   width="1440"
@@ -46,7 +54,7 @@ const Slider = ({ slides }) => {
               )}
               <FaArrowCircleRight
                 onClick={nextSlide}
-                className="absolute lg:top-[50%] md:top-[50%] top-[100%] right-[30px]  cursor-pointer select-none z-[2]"
+                className="absolute top-[45%] right-[30px]  cursor-pointer select-none z-[2]"
                 size={50}
               />
             </div>
